@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Eigenen Namen ausgeben
  *
