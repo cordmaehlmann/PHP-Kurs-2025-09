@@ -26,7 +26,7 @@ foreach ($filme as $key => $film) {
 
 ?>
 
-<!-- TODO: ID-Heading raus, Fsk -> FSK -->
+<!-- TODO: Id-Heading raus, Fsk -> FSK -->
 
 <!DOCTYPE html>
 <html lang="de">
