@@ -16,7 +16,7 @@ $filme = $stmt->fetchAll();
 
 $headings = array_keys($filme[0]);
 // Spaltenüberschriften entfernen:
-unset($headings[0]);  // In PHP werden Arrays nicht neu indiziert
+//unset($headings[0]);  // In PHP werden Arrays nicht neu indiziert
 unset($headings[8]);
 var_dump($headings);
 
@@ -30,7 +30,7 @@ foreach ($headings as $k => $v) {
 $headings = array_map('ucfirst', $headings);
 
 foreach ($filme as $key => $film) {
-    unset($film['id']);     // Inhalte entfernen
+    // unset($film['id']);     // Inhalte entfernen
     unset($film['cover']);  // Inhalte entfernen
     $filme[$key] = $film;
 }
@@ -60,7 +60,8 @@ foreach ($filme as $key => $film) {
     </tr>
 
     <?php foreach ($filme as $film) { ?>
-    <tr>
+
+    <tr onclick="location.href='film_anzeigen.php?id=<?php echo $film['id']; ?>'">
         <?php foreach ($film as $f) { ?>
 
                 <td>
@@ -69,6 +70,7 @@ foreach ($filme as $key => $film) {
 
         <?php } ?>
     </tr>
+
     <?php } ?>
 
 
