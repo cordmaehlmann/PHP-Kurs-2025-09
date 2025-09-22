@@ -18,7 +18,7 @@ $headings = array_keys($filme[0]);
 // Spaltenüberschriften entfernen:
 //unset($headings[0]);  // In PHP werden Arrays nicht neu indiziert
 unset($headings[8]);
-var_dump($headings);
+// var_dump($headings);
 
 
 foreach ($headings as $k => $v) {

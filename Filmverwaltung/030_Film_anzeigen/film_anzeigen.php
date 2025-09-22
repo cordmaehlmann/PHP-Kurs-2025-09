@@ -7,12 +7,14 @@ $options = [
 ];
 $db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options);
 
-var_dump($_GET);
+// var_dump($_GET);
+// echo $_GET['id'];
 
-echo $_GET['id'];
-
-// SELECT * FROM filme WHERE id=1;
-
+// SELECT * FROM filme WHERE id=3;
+// $stmt = $db->query('SELECT * FROM filme WHERE id=3;');
+$stmt = $db->query("SELECT * FROM filme WHERE id={$_GET['id']};");
+$film = $stmt->fetch();
+var_dump($film);
 
 ?>
 <!DOCTYPE html>
