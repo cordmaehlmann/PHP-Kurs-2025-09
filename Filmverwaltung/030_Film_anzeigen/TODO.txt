@@ -19,6 +19,9 @@ Film eintragen
 Film updaten
 Film löschen
 
+NEU:
+Minuten und $ einbauen
+
 
 Für später:
 
