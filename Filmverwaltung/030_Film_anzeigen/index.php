@@ -20,13 +20,10 @@ $headings = array_keys($filme[0]);
 unset($headings[8]);
 // var_dump($headings);
 
-
 foreach ($headings as $k => $v) {
     if ($v == 'fsk') $v = strtoupper($v);
     $headings[$k] = $v;
 }
-
-
 $headings = array_map('ucfirst', $headings);
 
 foreach ($filme as $key => $film) {
