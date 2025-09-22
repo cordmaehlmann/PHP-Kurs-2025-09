@@ -15,8 +15,6 @@ Einspielergebnis als ganze Zahl stellen: 192.3 -> 192.300.000
 
 
 
-
-
 Film eintragen
 Film updaten
 Film löschen
