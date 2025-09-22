@@ -1,16 +1,13 @@
 <?php
 
-$options = [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-];
-$db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options);
+// reguire_once bindet die angegebene Datei an genau der Stelle im Quellcode ein.
+require_once 'lib/db_verbindung.php';
 
 $stmt = $db->query('SELECT * FROM filme;');
 $filme = $stmt->fetchAll();
 // var_dump($filme);
 
-// var_dump($filme[0]);  // array(9)
+var_dump($filme[0]);  // array(9)
 
 // echo $filme[0]['titel'];  // Equalizer
 

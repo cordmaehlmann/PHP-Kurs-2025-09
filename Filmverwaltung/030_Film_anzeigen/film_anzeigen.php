@@ -1,11 +1,6 @@
 <?php
 
-// Datenbankverbindung herstellen (wie in "Test-Datensätze.php")
-$options = [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-];
-$db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options);
+require_once 'lib/db_verbindung.php';
 
 // var_dump($_GET);
 // echo $_GET['id'];

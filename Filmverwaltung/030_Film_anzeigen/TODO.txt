@@ -1,13 +1,36 @@
 
 TODOs
 
-Datenbankverbindung auslagern
 
-Film anzeigen
+index.php:
+Spalten raus: Id, Vertrieb, FSK, Einspielergebnis
+Laenge -> Länge
+Reihenfolge ändern: Titel, Jahr, Länge, Genre
+
+film_anzeigen.php:
+Erste Buchstaben groß
+FSK & ID komplett groß
+Laenge -> Länge
+Einspielergebnis als ganze Zahl stellen: 192.3 -> 192.300.000
+
+
+
+
 
 Film eintragen
-
 Film updaten
-
 Film löschen
 
+
+Für später:
+
+Link zum Trailer
+Neue Spalte trailer (in filme), Trailer-Links recherchieren und einfügen
+
+Personen einpflegen: Schauspielende, Drehbuchautor:innen, Regisseur:innen
+Tabelle personen
+Zwischentabelle filme_personen
+
+
+Fertig:
+Datenbankverbindung auslagern
