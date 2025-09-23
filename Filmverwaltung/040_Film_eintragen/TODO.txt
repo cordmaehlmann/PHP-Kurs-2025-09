@@ -1,18 +1,26 @@
 
 TODOs
 
-Navi
-
-index.php:
-Liste sortieren nach
-Suchfunktion
 
 film_anzeigen:
 Doppelpunkte hinter die Keys
 Minuten und $ einbauen
 
 
+
+
+
+
+Navi
+
+index.php:
+Liste sortieren nach
+Suchfunktion
+
 Film eintragen
+
+Cover-Upload
+
 Film updaten
 Film löschen
 
