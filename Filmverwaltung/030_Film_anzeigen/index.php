@@ -3,7 +3,7 @@
 // reguire_once bindet die angegebene Datei an genau der Stelle im Quellcode ein.
 require_once 'lib/db_verbindung.php';
 
-$stmt = $db->query('SELECT * FROM filme;');
+$stmt = $db->query('SELECT id, titel, jahr, genre, laenge FROM filme;');
 $filme = $stmt->fetchAll();
 // var_dump($filme);
 
@@ -13,14 +13,17 @@ var_dump($filme[0]);  // array(9)
 
 $headings = array_keys($filme[0]);
 // Spaltenüberschriften entfernen:
-//unset($headings[0]);  // In PHP werden Arrays nicht neu indiziert
+unset($headings[0]);  // In PHP werden Arrays nicht neu indiziert
 unset($headings[8]);
 // var_dump($headings);
 
+/*
 foreach ($headings as $k => $v) {
     if ($v == 'fsk') $v = strtoupper($v);
     $headings[$k] = $v;
 }
+*/
+
 $headings = array_map('ucfirst', $headings);
 
 foreach ($filme as $key => $film) {
@@ -56,22 +59,17 @@ foreach ($filme as $key => $film) {
     <?php foreach ($filme as $film) { ?>
 
     <tr onclick="location.href='film_anzeigen.php?id=<?php echo $film['id']; ?>'">
-        <?php foreach ($film as $f) { ?>
-
-                <td>
-                    <?php echo $f; ?>
-                </td>
-
+        <?php foreach ($film as $k => $v) { ?>
+            <?php
+                if ($k != 'id') echo "<td>$v</td>";
+            ?>
         <?php } ?>
     </tr>
 
     <?php } ?>
 
 
-
 </table>
-
-
 
 </body>
 </html>

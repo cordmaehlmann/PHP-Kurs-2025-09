@@ -3,7 +3,6 @@ TODOs
 
 
 index.php:
-Spalten raus: Id, Vertrieb, FSK, Einspielergebnis
 Laenge -> Länge
 Reihenfolge ändern: Titel, Jahr, Länge, Genre
 
@@ -35,3 +34,4 @@ Zwischentabelle filme_personen
 
 Fertig:
 Datenbankverbindung auslagern
+Spalten raus: Id, Vertrieb, FSK, Einspielergebnis
