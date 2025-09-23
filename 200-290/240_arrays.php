@@ -58,7 +58,28 @@ foreach ($person as $s => $w) {  // $s für Schlüssel, $w für Wert
     echo $s . ': ' . $w . "\n";
 }
 
+// Doppelpfeil beim nummerischen Array ist der seltenere Fall:
+// Wird beim Erzeugen nicht benötigt.
+$menschen = ['Peter', 'Paul', 'Mary'];
 
+// Kann beim Auslesen verwendet werden:
+foreach ($menschen as $k => $v) {
+    echo ($k+1) . '. ' . $v . "\n";
+}
+
+for ($i=0; $i < count($menschen); $i++) {
+    echo ($i+1) . '. ' . $menschen[$i] . "\n";
+}
+
+// Assoziatives Array ohne Doppelpfeil ist der seltenere Fall
+$person = [
+    'vorname' => 'Peter',
+    'nachname' => 'Wellert',
+    'alter' => 39
+];
+foreach ($person as $p) {
+    echo $p. "\n";
+}
 
 
 

@@ -13,6 +13,14 @@ $film['cover'] = '<img src="cover/' . $film['cover'] . '">';
 
 var_dump($film);
 
+$gross = ['id', 'fsk'];
+foreach ($film as $k => $v) {
+    if (in_array($k, $gross)) $k = strtoupper($k);
+    // TODO: ucfirst() hier hin
+    $film_ausgabe[$k] = $v;
+}
+// $film = $film_ausgabe;
+
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -30,10 +38,10 @@ var_dump($film);
 <h1>Film anzeigen</h1>
 
 <table>
-        <?php foreach ($film as $k => $v) { ?>
+        <?php foreach ($film_ausgabe as $k => $v) { ?>
         <tr>
             <th>
-                <?php echo $k; ?>
+                <?php echo ucfirst($k); ?>
             </th>
             <td>
                 <?php echo $v; ?>
