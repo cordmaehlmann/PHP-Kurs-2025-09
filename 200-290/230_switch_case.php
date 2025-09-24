@@ -34,6 +34,30 @@ switch ($tag) {
         echo 'FEHLER';
 }
 
+echo '<hr>';
+
+// In der Variablen darf auch ein String sein:
+$essen = ['Apfel', 'Birne', 'Zucchini', 'Gurke', 'Banane'];
+$essen = ['Apfel', 'Birne', 'Zucchini', 'Banane', 'Gurke'];
+
+$index = rand(0, 4);
+
+switch ($essen[$index]){
+    case 'Apfel':
+    case 'Birne':
+    case 'Banane':
+        $ergebnis = 'Obst';
+        break;
+    case 'Zucchini':
+    case 'Gurke':
+        $ergebnis = 'Gemüse';
+        break;
+    default:
+        $ergebnis = 'FEHLER!';
+}
+echo $essen[$index] . ' ist ' . $ergebnis;
+
+
 
 
 

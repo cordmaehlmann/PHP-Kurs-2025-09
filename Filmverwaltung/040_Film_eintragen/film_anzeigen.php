@@ -10,13 +10,17 @@ if (!isset($_GET['id'])) $_GET['id'] = 1;  // Verhindert die Fehlermeldung beim 
 
 // SELECT * FROM filme WHERE id=3;
 // $stmt = $db->query('SELECT * FROM filme WHERE id=3;');
-$stmt = $db->query("SELECT * FROM filme WHERE id={$_GET['id']};");
-$film = $stmt->fetch();
+$film = [];
+if (isset($db)) {
+    $stmt = $db->query("SELECT * FROM filme WHERE id={$_GET['id']};");
+    $film = $stmt->fetch();
+}
 $film['cover'] = '<img src="cover/' . $film['cover'] . '">';
 
 var_dump($film);
 
 $gross = ['id', 'fsk'];
+$film_ausgabe = [];
 foreach ($film as $k => $v) {
     if (in_array($k, $gross)) $k = strtoupper($k);
     // TODO: ucfirst() hier hin
