@@ -15,6 +15,7 @@ if (isset($db)) {
     $stmt = $db->query("SELECT * FROM filme WHERE id={$_GET['id']};");
     $film = $stmt->fetch();
 }
+
 $film['cover'] = '<img src="cover/' . $film['cover'] . '">';
 
 var_dump($film);

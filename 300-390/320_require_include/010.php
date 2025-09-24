@@ -24,5 +24,5 @@ echo '<hr>';
 // Die Endung ist frei wählbar.
 include 'functions.inc';
 
-echo addiere(3, 4);
+echo addiere(3, 4); // 7
 

@@ -6,10 +6,11 @@ film_anzeigen:
 Doppelpunkte hinter die Keys
 Minuten und $ einbauen
 
+Film eintragen
+Auswahlliste für FSK: 0, 6, 12, 16, 18
 
-
-
-
+Optionale Übung:
+Vertrieb im Eintragen-Formular als Auswahllisten
 
 Navi
 
@@ -18,7 +19,6 @@ Liste sortieren nach
 Suchfunktion
 
 Film eintragen
-
 Cover-Upload
 
 Film updaten
@@ -32,6 +32,9 @@ Neue Spalte trailer (in filme), Trailer-Links recherchieren und einfügen
 Personen einpflegen: Schauspielende, Drehbuchautor:innen, Regisseur:innen
 Tabelle personen
 Zwischentabelle filme_personen
+
+Tabellen Genre & Vertrieb und dann im Eintragen-Formular entsprechende Auswahllisten.
+
 
 
 Fertig:
