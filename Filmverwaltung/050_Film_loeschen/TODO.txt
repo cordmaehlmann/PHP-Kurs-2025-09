@@ -6,8 +6,6 @@ film_anzeigen:
 Doppelpunkte hinter die Keys
 Minuten und $ einbauen
 
-Film eintragen
-Auswahlliste für FSK: 0, 6, 12, 16, 18
 
 Optionale Übung:
 Vertrieb im Eintragen-Formular als Auswahllisten
@@ -20,7 +18,6 @@ Suchfunktion
 
 
 Film updaten
-Film löschen
 
 
 Für später:
@@ -33,7 +30,7 @@ Zwischentabelle filme_personen
 
 Tabellen Genre & Vertrieb und dann im Eintragen-Formular entsprechende Auswahllisten.
 
-
+Film löschen: Filme anzeigen Buttons oder Checkboxen
 
 Fertig:
 Datenbankverbindung auslagern
@@ -46,4 +43,9 @@ Laenge -> Länge
 Einspielergebnis als ganze Zahl stellen: 192.3 -> 192.300.000
 
 Film eintragen
+Auswahlliste für FSK: 0, 6, 12, 16, 18
+
+Film eintragen
 Cover-Upload
+
+Film löschen
